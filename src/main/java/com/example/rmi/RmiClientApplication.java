@@ -1,4 +1,4 @@
-package rmi;
+package com.example.rmi;
 
 import com.example.rmi.remote.RemoteDB;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package rmi.remote;
+package com.example.rmi.remote;
 
 import com.example.rmi.component.Column;
 import com.example.rmi.component.OperatorType;

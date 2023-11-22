@@ -12,11 +12,8 @@
 <h2>Table List</h2>
 <ul>
   <li th:each="table : ${tables}">
-    <a th:href="@{'/viewTable?tableIndex=' + ${table.id}}" th:text="${table.name}"></a>
+    <span th:text="${table.name}"></span>
   </li>
-  <a th:href="@{/addTable}">
-    <button>Add Table</button>
-  </a>
 </ul>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package rmi.component;
+package com.example.rmi.component;
 
 import java.io.Serializable;
 import java.util.ArrayList;

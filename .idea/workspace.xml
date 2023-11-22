@@ -1,8 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="abdddc04-46a7-4cfe-905e-f4939e5c54d0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/RmiClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/Column.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/OperatorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/Row.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/TableData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/column/CharColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/column/ColumnType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/column/IntegerColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/column/MoneyColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/column/MoneyInvlColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/column/RealColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/component/column/StringColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/controller/DatabaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/rmi/remote/RemoteDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/viewTable.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2YVWQ0dilk3b7UR0AHXTYalJW6Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/programming/IdeaProjects/rest_client/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
+    "spring.configuration.checksum": "94d12d1b967d0e30621b0b42d14c64a8"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\programming\IdeaProjects\rest_client\src\main\resources" />
+      <recent name="E:\programming\IdeaProjects\rest_client\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RmiClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="rest_client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rmi.RmiClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abdddc04-46a7-4cfe-905e-f4939e5c54d0" name="Changes" comment="" />
+      <created>1700611224166</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700611224166</updated>
+      <workItem from="1700611226230" duration="1393000" />
+      <workItem from="1700643335316" duration="1502000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
 </project>

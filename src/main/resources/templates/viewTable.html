@@ -4,12 +4,6 @@
     <title>View Table</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script>
-        function submitOnChange(inputElement) {
-            var form = inputElement.form;
-            form.submit();
-        }
-    </script>
 </head>
 <body>
 <div class="container">
@@ -18,30 +12,10 @@
         <div class="row my-2 table-links">
             <div class="col">   <ul class="list-unstyled d-flex justify-content-start">
                 <li th:each="table : ${tables}">
-                    <a th:href="@{'/viewTable?tableIndex=' + ${table.id}}" th:text="${table.name}" class="btn btn-link mx-1"></a>
+                    <span th:text="${table.name}" class="btn btn-link mx-1"></span>
                 </li>
                 </ul>
             </div>
-        </div>
-    </div>
-
-
-
-    <div class="row my-2">
-        <div class="col d-flex justify-content-start">
-            <a th:href="@{/addTable}" class="btn btn-primary mb-3 mr-2">Add Table</a>
-            <form th:action="@{/deleteTable}" method="post" class="mb-3 mr-2">
-                <input type="hidden" name="tableIndex" th:value="${thisTable.id}" />
-                <button type="submit" class="btn btn-secondary">Delete Table</button>
-            </form>
-            <form th:action="@{/addRow}" method="post" class="mb-3 mr-2">
-                <input type="hidden" name="tableIndex" th:value="${thisTable.id}" />
-                <button type="submit" class="btn btn-secondary">Add Row</button>
-            </form>
-            <form th:action="@{/addColumn}">
-                <input type="hidden" name="tableIndex" th:value="${thisTable.id}" />
-                <button type="submit" class="btn btn-danger">Add Column</button>
-            </form>
         </div>
     </div>
 
@@ -67,11 +41,6 @@
                 <!-- Displaying Column Names with Types -->
                 <th th:each="column, stat : ${columns}">
                     <span th:text="${column.name} + ' (' + ${column.type} + ')'"></span>
-                    <form th:action="@{/deleteColumn}" method="post" class="delete-column-form">
-                        <input type="hidden" name="columnIndex" th:value="${stat.index}" />
-                        <input type="hidden" name="tableIndex" th:value="${thisTable.id}" />
-                        <button type="submit" class="btn btn-danger btn-sm">Delete Column</button>
-                    </form>
                 </th>
             </tr>
             </thead>
@@ -80,30 +49,18 @@
                 <!-- Combined Cell for Row Index and Delete Row Button -->
                 <td>
                     <span th:text="${rowStat.index}"></span>
-                    <form th:action="@{/deleteRow}" method="post" class="delete-row-form">
-                        <input type="hidden" name="rowIndex" th:value="${rowStat.index}" />
-                        <input type="hidden" name="tableIndex" th:value="${thisTable.id}" />
-                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
-                    </form>
                 </td>
                 <!-- Editable Cells -->
                 <td th:each="cell, cellStat : ${row.values}">
                     <form th:action="@{/editCell}" method="post">
                         <input type="text" th:name="|value-${rowStat.index}-${cellStat.index}|"
-                               th:value="${cell}" onblur="submitOnChange(this)" class="form-control" />
-                        <input type="hidden" name="rowIndex" th:value="${rowStat.index}" />
-                        <input type="hidden" name="columnIndex" th:value="${cellStat.index}" />
-                        <input type="hidden" name="tableIndex" th:value="${thisTable.id}" />
+                               th:value="${cell}" class="form-control" />
                     </form>
                 </td>
             </tr>
             </tbody>
         </table>
     </div>
-    <form th:action="@{/removeDuplicates}" method="post">
-        <button type="submit">Remove Duplicates</button>
-        <input type="hidden" name="tableIndex" th:value="${thisTable.id}" />
-    </form>
 
 </div>
 </body>
@@ -139,14 +96,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    .delete-row-cell, .delete-column-cell {
-        width: 100px; /* Adjust the width as needed */
-    }
-
-    .delete-row-form, .delete-column-form {
-        visibility: hidden;
     }
 
     .row-hover:hover .delete-row-form,

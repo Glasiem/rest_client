@@ -1,4 +1,4 @@
-package rmi.component.column;
+package com.example.rmi.component.column;
 
 
 import com.example.rmi.component.Column;
